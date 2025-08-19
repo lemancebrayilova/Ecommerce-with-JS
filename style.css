@@ -119,3 +119,12 @@ h4 {
     flex-direction: column;
     gap: 1em;
 }
+
+
+
+/*----------- RESPONSIVE -----------*/
+@media screen and (max-width: 992px) {
+    .container {
+        padding: 0 2em;
+    }
+}
