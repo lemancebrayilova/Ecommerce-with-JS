@@ -23,8 +23,8 @@
     --fw7: 700;
     --fw8: 800;
 
-    --trans-background-color: backgroun-color .3s, color .3s;
-    --trans-background: backgroun-color .3s;
+    --trans-background-color: background-color .3s, color .3s;
+    --trans-background: background-color .3s;
     --trans-color: color .3s;
 }
 
@@ -142,6 +142,10 @@ h4 {
     padding: 0 0.75em 0 0;
 }
 
+.mobile-hide {
+    display: none;
+}
+
 /*----------- HEADER -----------*/
 header li > a {
     display: flex;
@@ -183,6 +187,11 @@ header li > a {
 }
 
 /* Header Nav */
+.header-nav {
+    padding: 0.5em 0;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
 .trigger {
     font-size: 1.5em;
     display: flex;
@@ -227,10 +236,10 @@ header li > a {
 .fly-item {
     position: absolute;
     height: 16px;
-    font-weight: var(--font-smaller);
+    font-size: var(--font-smaller);
     padding: 3px;
     text-align: center;
-    line-height: 10px;
+    line-height: 15px;
     color: var(--white-color);
 }
 nav .fly-item {
@@ -242,14 +251,43 @@ nav .fly-item {
     background-color: var(--primary-color);
 }
 
+.header-nav .right {
+    position: relative;
+    margin-left: auto;
+}
+.header-nav .right .icon-large {
+    position: relative;
+}
+.header-nav .right .fly-item {
+    top: 0;
+    right: 16px;
+    width: 16px;
+    background-color: var(--secondary-dark-color);
+    border-radius: var(--percent50);
+}
+
 
 
 /*----------- RESPONSIVE -----------*/
-@media screen and (max-width: 992px) {
+@media screen and (min-width: 992px) {
     .container {
         padding: 0 2em;
     }
     .desktop-hide {
         display: none;
     }
+    .mobile-hide {
+        display: block;
+    }
+    .logo a {
+        margin-right: 2em;
+    }
+    .header-nav {
+        padding: 0;
+        margin: 0;
+        border-bottom: 0;
+    }
+    .header-nav .right li > a {
+        margin-left: 1em;
+    } 
 }
