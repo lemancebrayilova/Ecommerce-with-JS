@@ -6,6 +6,7 @@
     <title>Ecommerce Website</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
 
@@ -425,25 +426,66 @@
             <div class="slider">
                 <div class="container">
                     <div class="wrapper">
-                        <div class="myslider">
-                            <div class="wrapper">
-                                <div class="slide">
+                        <div class="myslider swiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
                                     <div class="item">
                                         <div class="image object-cover">
                                             <img src="assets/slider/slider0.jpg" alt="">
                                         </div>
                                         <div class="text-content flexcol">
                                             <h4>Shoes Fashion</h4>
-                                            <h2><span>Come and Get it!</span>Brand New Shoes</h2>
+                                            <h2><span>Come and Get it!</span><br>Brand New Shoes</h2>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="assets/slider/slider1.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Quick Fashion</h4>
+                                            <h2><span>Fit Your Wardrobe</span><br>With Luxury Items</h2>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="assets/slider/slider2.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Quick Offer</h4>
+                                            <h2><span>Wooden Minimal Sofa</span><br>Extra 50% Off</h2>
+                                            <a href="#" class="primary-button">Shop Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="item">
+                                        <div class="image object-cover">
+                                            <img src="assets/slider/slider3.jpg" alt="">
+                                        </div>
+                                        <div class="text-content flexcol">
+                                            <h4>Best Deals</h4>
+                                            <h2><span>home Workout Accessories</span><br>Push The Limit</h2>
                                             <a href="#" class="primary-button">Shop Now</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- slider -->
         </main>
         <!-- main -->
 
@@ -451,6 +493,7 @@
         <!-- footer -->
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
